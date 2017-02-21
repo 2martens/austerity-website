@@ -1,0 +1,16 @@
+# Bare minimum
+django-cms>=3.4
+
+# database
+mysqlclient
+
+# Optional, recommended packages
+djangocms-audio
+djangocms-file
+djangocms-history
+djangocms-link
+djangocms-picture
+djangocms-snippet
+djangocms-style
+djangocms-text-ckeditor
+djangocms-video
