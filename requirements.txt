@@ -6,6 +6,7 @@ mysqlclient
 
 # Optional, recommended packages
 djangocms-audio
+djangocms-column
 djangocms-file
 djangocms-history
 djangocms-link
