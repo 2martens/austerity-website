@@ -2,5 +2,10 @@ language: python
 sudo: false
 python:
   - "3.4"
-install: "pip install --user -r requirements.txt"
+env:
+  - DJANGO_VERSION=1.10.5
+  - DJANGO_VERSION=1.9.12
+install:
+  - pip install --user -q Django==$DJANGO_VERSION
+  - "pip install --user -r requirements.txt"
 script: "python manage.py test"
