@@ -16,9 +16,9 @@
         {% compress css %}
             <link rel="stylesheet" href="{% static 'css/jqueryui/jquery-ui.min.css' %}">
             <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-cyborg.min.css' %}">
-            {% render_block "css" %}
             {% block extra_css %}{% endblock %}
         {% endcompress %}
+        {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
         <script src="https://use.fontawesome.com/59253a2c0e.js"></script>
 
         {% block extra_head %}{% endblock %}
@@ -34,6 +34,6 @@
                     crossorigin="anonymous"></script>
             <script src="{% static "js/jquery/jquery-ui.min.js" %}"></script>
         {% endblock %}
-        {% render_block "js" %}
+        {% render_block "js" postprocessor "compressor.contrib.sekizai.compress" %}
     </body>
 </html>
