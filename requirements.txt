@@ -1,3 +1,6 @@
+# fixes parsing error compared to version 2.3
+https://github.com/SmileyChris/easy-thumbnails/archive/master.zip
+
 # Bare minimum
 django-cms>=3.4
 
