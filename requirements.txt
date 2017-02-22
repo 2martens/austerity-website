@@ -18,3 +18,4 @@ djangocms-snippet
 djangocms-style
 djangocms-text-ckeditor
 djangocms-video
+aldryn-bootstrap3

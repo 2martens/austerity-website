@@ -33,6 +33,7 @@ SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
+    'aldryn_bootstrap3',
     'djangocms_audio',
     'djangocms_column',
     'djangocms_file',
@@ -107,6 +108,10 @@ THUMBNAIL_PROCESSORS = (
 
 CMS_TEMPLATES = [
     ('default.html', 'Default template'),
+]
+
+ALDRYN_BOOTSTRAP3_CAROUSEL_STYLES = [
+    ('feature', _('Featured Version')),
 ]
 
 WSGI_APPLICATION = 'austerity_site.wsgi.application'
